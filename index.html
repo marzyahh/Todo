@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <main class="container h-100">
+      <div class="container-fliud h-100 row">
+        <div class="p-0 w-75 border d-flex w-100 h-75 border-secondery m-5">
+          <section class="left w-50 border border-3">
+            <div class="top d-flex p-4 border border-3 h-25">
+              <span class="p-4"
+                ><i class="display-3 bi bi-person-circle"></i
+              ></span>
+              <span class="pt-4 h6 mt-4">
+                Hi, <span class="userName"></span>
+              </span>
+            </div>
+
+            <div class="bottom border border-3 h-75">
+              <div class="today pt-4 h5">
+                <span class="p-5"><i class="bi bi-calendar-check"></i></span>
+                <span>Today Task</span>
+              </div>
+              <ul class=" pt-5 h6">
+                <li id="high"><span></span> High Priority</li>
+                <li id="medium"><span></span> Medium Priority</li>
+                <li id="low"><span></span> Low Priority</li>
+                <li>
+                  <span><i class="bi bi-plus-circle"></i> </span> Add Filter
+                </li>
+              </ul>
+
+              <div class="time pt-4 h5">
+                <span class="p-5"><i class="bi bi-clock"></i></span>
+                <span>Schedualed Task</span>
+              </div>
+              <div class="setting pt-4 h5">
+                <span class="p-5"><i class="bi bi-gear"></i> </span>
+                <span>Settings</span>
+              </div>
+            </div>
+          </section>
+          <section class="right w-75 border border-3">
+            <div class="topR d-flex justify-content-evenly pt-5 text-light h2">
+              <h3>Today Main Focus</h3>
+              <span class="timer">ooo</span>
+            </div>
+            <div class="bottomR d-flex w-100 m-5">
+              <div class="circle ">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="input w-75">
+                <input
+                  type="text"
+                  class="w-100 pt-4 border"
+                  placeholder="What's your Next Task? "
+                />
+              </div>
+              <div class="icon">
+                <span><i class="bi bi-plus-circle h4 iconPlus"></i></span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./asset/js/main.js"></script>
+</html>
