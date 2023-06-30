@@ -27,6 +27,7 @@ body {
       color: green;
     }
     >*{
+      cursor: pointer;
       margin-left: 25px;
     }
   }
@@ -111,16 +112,7 @@ main {
       width: 100%;
     }
     .bottomR {
-      > * {
-        border-radius: 30px;
-      }
-      .circle {
-        // position: absolute;
-        width: 15%;
-        height: 50px;
-        background-color: #fff;
-        // border: 1px solid green;
-        outline: none;
+      border-radius: 30px;  
         > span {
           width: 20px;
           height: 20px;
@@ -129,7 +121,6 @@ main {
           background-color: red;
         }
         span:nth-of-type(1) {
-          background-color: red;
           left: 14%;
           top: 30%;
         }
@@ -140,15 +131,16 @@ main {
         }
         span:nth-of-type(3) {
           background-color: yellow;
-          // left: 30%;
-          // top: 30%;
         }
       }
-      .input{
-        >input{
+        input{
             border-radius: 30px;
+            // border: 1px solid black;
+            &::placeholder{
+              padding-left: 20px;
+              font-size: 18px;
+              color: black;
+            }
         }
-      }
-    }
   }
 }

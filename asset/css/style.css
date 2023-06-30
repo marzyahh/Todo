@@ -29,6 +29,7 @@ body {
   color: green;
 }
 .newDiv > * {
+  cursor: pointer;
   margin-left: 25px;
 }
 
@@ -103,35 +104,43 @@ main .right .topR {
   justify-content: space-evenly;
   width: 100%;
 }
-main .right .bottomR > * {
+main .right .bottomR {
   border-radius: 30px;
 }
-main .right .bottomR .circle {
-  width: 15%;
-  height: 50px;
-  background-color: #fff;
-  outline: none;
-}
-main .right .bottomR .circle > span {
+main .right .bottomR > span {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   display: inline-block;
   background-color: red;
 }
-main .right .bottomR .circle span:nth-of-type(1) {
-  background-color: red;
+main .right .bottomR span:nth-of-type(1) {
   left: 14%;
   top: 30%;
 }
-main .right .bottomR .circle span:nth-of-type(2) {
+main .right .bottomR span:nth-of-type(2) {
   background-color: green;
   top: 30%;
   left: 22%;
 }
-main .right .bottomR .circle span:nth-of-type(3) {
+main .right .bottomR span:nth-of-type(3) {
   background-color: yellow;
 }
-main .right .bottomR .input > input {
+main .right input {
   border-radius: 30px;
+}
+main .right input::-moz-placeholder {
+  padding-left: 20px;
+  font-size: 18px;
+  color: black;
+}
+main .right input:-ms-input-placeholder {
+  padding-left: 20px;
+  font-size: 18px;
+  color: black;
+}
+main .right input::placeholder {
+  padding-left: 20px;
+  font-size: 18px;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
